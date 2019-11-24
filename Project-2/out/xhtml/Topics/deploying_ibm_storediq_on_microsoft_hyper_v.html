@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="(C) Copyright 2019" />
+<meta name="DC.rights.owner" content="(C) Copyright 2019" />
+<meta name="DC.Type" content="task" />
+<meta name="DC.Title" content="Deploying IBM StoredIQ on Microsoft Hyper-V" />
+<meta name="abstract" content="" />
+<meta name="description" content="" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="deploying_ibm_storediq_on_microsoft_hyper_v" />
+<link rel="stylesheet" type="text/css" href="../commonltr.css" />
+<title>Deploying IBM StoredIQ on Microsoft Hyper-V</title>
+</head>
+<body id="deploying_ibm_storediq_on_microsoft_hyper_v">
+
+    <h1 class="title topictitle1" id="ariaid-title1">Deploying IBM StoredIQ on Microsoft Hyper-V</h1>
+
+    
+    <div class="body taskbody"><p class="shortdesc"></p>
+
+        <div class="section context">
+            <p class="p">As an alternative to installing on an ESX server, the IBM StoredIQ gateway, data
+                server, and application stack can be installed on Microsoft Hyper-V. This option is
+                not supported for the Elasticsearch virtual appliance.</p>
+
+            <div class="p">Installing IBM StoredIQ on Microsoft Hyper-V requires the use of third-party
+                software. For the procedure described here, the following software prerequisites
+                must be met: <ul class="ul" id="deploying_ibm_storediq_on_microsoft_hyper_v__ul_xdd_bnv_5jb">
+                    <li class="li">Microsoft Hyper-V Manager must be installed on a Windows system.</li>
+
+                    <li class="li">7-zip for Windows or tar for the Linux operating system must be available to
+                        extract contents of the OVA.</li>
+
+                    <li class="li">7-zip for Windows or gunzip for the Linux operating system must be installed
+                        to decompress the <span class="ph filepath">vmdk.gz</span> file</li>
+
+                    <li class="li">Microsoft Virtual Machine Converter 3.0 (Windows) or qemu-img (Linux) or
+                        must be installed to convert the files from VMWare
+                            <span class="ph filepath">.vmdk</span> files to Hyper-V <span class="ph filepath">.vhdx</span>
+                        files</li>
+
+                </ul>
+</div>
+
+            <p class="p">Microsoft Hyper-V does not support OVAs and OVFs. The virtual machine needs to be
+                built manually.</p>
+
+            <p class="p"> Consider the following instructions a sample procedure. The instructions might
+                differ depending on the version of the third-party software.</p>
+
+            <p class="p">Complete these steps for the gateway, the data server, and the AppStack:</p>
+
+        </div>
+
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Extract the <span class="ph filepath">vmdk</span> file from the OVA.</span>
+                <ol type="a" class="ol substeps" id="deploying_ibm_storediq_on_microsoft_hyper_v__substeps_b4g_4nv_5jb">
+                    <li class="li substep">
+                        <span class="ph cmd">Download the OVA.</span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Extract the contents of the OVA by using 7-zip for Windows or tar for
+                            the Linux operating system.</span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Decompress the <span class="ph filepath">vmdk.gz</span> archive by using 7-zip for
+                            Windows or gunzip for Linux. </span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Delete everything except the <span class="ph filepath">vmdk</span> file when the
+                            OVA extraction is complete.</span>
+                    </li>
+
+                </ol>
+
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Convert the VMWare <span class="ph filepath">.vmdk</span> file to a Microsoft Hyper-V
+                        <span class="ph filepath">.vhdx </span>file</span>
+                <div class="itemgroup info">
+                    <div class="p">For instructions about converting <span class="ph filepath">.vmdk</span> files to
+                            <span class="ph filepath">.vhdx</span> files, see the following links: <ul class="ul" id="deploying_ibm_storediq_on_microsoft_hyper_v__ul_ynh_b4v_5jb">
+                            <li class="li">Use Microsoft Virtual Machine Converter </li>
+
+                            <li class="li">Using qemu-img</li>
+
+                        </ul>
+</div>
+
+                </div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Build a virtual machine.</span>
+                <ol type="a" class="ol substeps" id="deploying_ibm_storediq_on_microsoft_hyper_v__substeps_icd_34v_5jb">
+                    <li class="li substep">
+                        <span class="ph cmd"><span class="ph menucascade"><span class="ph uicontrol">Select New Virtual Machine &gt; Next </span></span>from Hyper-V Manager</span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Enter the name of the virtual machine in the <span class="ph uicontrol">Specify Name
+                                and Location</span> window and click<span class="ph uicontrol">
+                                Next.</span></span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd"> Select <span class="ph uicontrol">Generation of the machine</span> in the
+                                <span class="ph uicontrol">Specify Generation</span> window</span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Enter the startup memory in the <span class="ph uicontrol">Assign Memory</span>
+                            window.</span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Select the correct network in the <span class="ph uicontrol">Configure
+                                Network</span> window and click<span class="ph uicontrol">
+                            Next.</span></span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Select <span class="ph uicontrol">Use an existing virtual hard disk</span> in the
+                                <span class="ph uicontrol">Connect Virtual Hard Disk</span> window. Search the
+                            disk location, select one of the primary disks, and then click
+                                <span class="ph uicontrol">Next.</span></span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Click <span class="ph uicontrol">Finish</span></span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Repeat these previous steps for all IBM StoredIQ disks.</span>
+                    </li>
+
+                </ol>
+
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Optional: Add disks.</span>
+                <ol type="a" class="ol substeps" id="deploying_ibm_storediq_on_microsoft_hyper_v__substeps_qx3_bpv_5jb">
+                    <li class="li substep">
+                        <span class="ph cmd">Select a virtual machine in Microsoft Hyper-V Manager</span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Select the settings for the virtual machine under
+                                <span class="ph uicontrol">Actions</span>.</span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Select the IDE controller and highlight Hard Drive in the
+                                <span class="ph uicontrol">Settings</span> window.</span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Select Hard Drive and virtual hard disk and click
+                                <span class="ph uicontrol">New</span>.</span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Click <span class="ph uicontrol">Next</span> in the New Virtual Hard Disk
+                            wizard.</span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Select <span class="ph uicontrol">VHDX</span> in Choose Disk Format and then click
+                                <span class="ph uicontrol">Next.</span>
+                        </span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Select Dynamically expanding in <span class="ph uicontrol">Choose Disk Type</span>
+                            and then click <span class="ph uicontrol">Next</span></span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Enter a name for the disk in the <span class="ph uicontrol">Specify Name and
+                                Location</span> window and the click
+                                <span class="ph uicontrol">Next</span>.</span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Select <span class="ph uicontrol">Create a new blank virtual hard disk</span> and
+                            enter a size in the<span class="ph uicontrol"> Configure Disk</span> window and
+                            then click<span class="ph uicontrol"> Finish</span>. </span>
+                    </li>
+
+                    <li class="li substep">
+                        <span class="ph cmd">Repeat this procedure for all additional disks.</span>
+                    </li>
+
+                </ol>
+
+            </li>
+</ol>
+
+        <div class="section postreq" id="deploying_ibm_storediq_on_microsoft_hyper_v__postreq_mgz_5pv_5jb">Complete the installation process by following the
+            instructions in <a class="xref" href="https://www.ibm.com/support/pages/sites/default/files/inline-files/$FILE/IBMSIQDeploymentConfigGuide76019_1.pdf" target="_blank">https://www.ibm.com/support/pages/sites/default/files/inline-files/$FILE/IBMSIQDeploymentConfigGuide76019_1.pdf</a></div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Deployment and Configuration Guide</title>
+    <topicmeta>
+        <data name="address">Building Technologies &amp; Solutions</data>
+        <data name="website">http://www.ibm.com/contact/us</data>
+        <data name="copyright"> © Copyright IBM Corp. 2001, 2019</data>
+        <data name="footer">IBM StoredIQ: Deployment and Configuration Guide</data>
+    </topicmeta>
+    <topicref href="Common_Resources.ditamap" format="ditamap"/>
+    <topicref href="Index_terms.ditamap" format="ditamap"/>
+    <topicref href="Topics/Glossary.dita" keys="" toc="no"></topicref>
+    <topicref href="Topics/About_this_publication.dita">
+        <topicref href="Topics/IBM%20StoredIQ%20product%20library.xml"/>
+        <topicref href="Topics/contacting_ibm_storediq_customer_support.dita"/>
+    </topicref>
+    <topicref href="Topics/IBM%20StoredIQ%20components.xml">
+        <topicref href="Topics/solution_components.dita"/>
+        <topicref href="Topics/applications_of_ibm_storediq.dita">
+            <topicref href="Topics/ibm_stored_data_server.dita" toc="no"/>
+            <topicref href="Topics/ibm_storediq_administrator.dita" toc="no"/>
+            <topicref href="Topics/ibm_stored_iq_data_workbench.dita" toc="no"/>
+            <topicref href="Topics/ibm_storediq_insights.dita" toc="no"/>
+            <topicref href="Topics/ibm_storediq_policy_manager.dita" toc="no"/>
+            <topicref href="Topics/ibm_storediq_desktop_data_collector.dita" toc="no"/>
+        </topicref>
+    </topicref>
+    <topicref href="Topics/planning_for_deployment.dita">
+        <topicref href="Topics/open_virtual__ova__configuration_requirements.dita"/>
+        <topicref href="Topics/network_and_port_requirements.dita"/>
+        <topicref href="Topics/environment_sizing_guidelines.dita"/>
+        <topicref href="Topics/stack_provisioning_prerequisites.dita"/>
+        <topicref href="Topics/license_usage_metrics.dita"/>
+        <topicref href="Topics/security.dita">
+            <topicref href="Topics/Default%20user%20accounts.dita" toc="no"/>
+        </topicref>
+    </topicref>
+    <topicref href="Topics/Deploying%20IBM%20StoredIQ.dita">
+        <topicref href="Topics/Deploying%20the%20virtual%20appliances.dita"/>
+        <topicref href="Topics/deploying_ibm_storediq_on_microsoft_hyper_v.dita"/>
+    </topicref>
+</map>

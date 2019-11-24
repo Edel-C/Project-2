@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="(C) Copyright 2019" />
+<meta name="DC.rights.owner" content="(C) Copyright 2019" />
+<meta name="DC.Type" content="concept" />
+<meta name="DC.Title" content="Stack-provisioning prerequisites" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="stack_provisioning_prerequisites" />
+<link rel="stylesheet" type="text/css" href="../commonltr.css" />
+<title>Stack-provisioning prerequisites</title>
+</head>
+<body id="stack_provisioning_prerequisites">
+
+    <h1 class="title topictitle1" id="ariaid-title1">Stack-provisioning prerequisites</h1>
+
+    <div class="body conbody">
+        <div class="p">Before a deployment, verify that you meet these prerequisites<ul class="ul" id="stack_provisioning_prerequisites__ul_gvm_sjl_tjb">
+                <li class="li">At least one physical server with sufficient processor, RAM, and hard disk
+                    configuration for the planned management project.</li>
+
+                <li class="li">VMware ESX or ESXi on CD/DVD or USB drive.</li>
+
+                <li class="li">IP addresses, cables, and physical switch ports for at least the ESXi/ESX
+                    interface, one data server, one gateway server, and one application stack</li>
+
+                <li class="li">Network connectivity that is enabled from the following locations:<p class="p">– The data
+                        server IP address to the gateway IP address on port 11103</p>
+<p class="p">- The
+                        gateway IP address to and from the application stack IP address on port 8765
+                        and 5432</p>
+<p class="p">– Ports 80, 443, and 22 from the administrative workstation
+                        to the application stack and data server IP addresses</p>
+<p class="p">– Port 22 from
+                        the administrative workstation to the gateway IP address.</p>
+</li>
+
+                <li class="li">Network connectivity that is enabled from the data server IP address to any data
+                    sources to be harvested and managed.</li>
+
+                <li class="li">A management station computer or notebook from where the load-management work is
+                    done</li>
+
+            </ul>
+</div>
+
+    </div>
+
+</body>
+</html>
