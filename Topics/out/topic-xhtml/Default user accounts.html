@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="(C) Copyright 2019" />
+<meta name="DC.rights.owner" content="(C) Copyright 2019" />
+<meta name="DC.Type" content="reference" />
+<meta name="DC.Title" content="Default user accounts" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="reference_pmr_z1v_5jb" />
+<link rel="stylesheet" type="text/css" href="commonltr.css" />
+<title>Default user accounts</title>
+</head>
+<body id="reference_pmr_z1v_5jb">
+
+    <h1 class="title topictitle1" id="ariaid-title1">Default user accounts</h1>
+
+    <div class="body refbody">
+        <div class="section" id="reference_pmr_z1v_5jb__section_dfq_dbv_5jb">
+            <p class="p">IBM StoredIQ comes with a set of default user accounts. </p>
+
+            <div class="p">For security reasons, change the passwords for these default accounts after the
+                installation is complete so that they are unique and different from the default
+                values. The new password must be 8 to 64 characters long and must contain characters
+                from at least three of these categories:<ul class="ul" id="reference_pmr_z1v_5jb__ul_dkg_jbv_5jb">
+                    <li class="li">Uppercase letters: A-Z</li>
+
+                    <li class="li">Lowercase letters: a-z</li>
+
+                    <li class="li">Digits: 0-9</li>
+
+                    <li class="li">Punctuation marks or special characters: . : * ^ / $ # _ + @ &amp; % -</li>
+
+                </ul>
+</div>
+
+        </div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_pmr_z1v_5jb__table_sf2_ybv_5jb" class="table" frame="border" border="1" rules="all"><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead" style="text-align:left;">
+                    <tr class="row">
+                        <th class="entry cellrowborder" style="text-align:center;vertical-align:top;" id="d41e52"><strong class="ph b">Account</strong></th>
+
+                        <th class="entry cellrowborder" style="text-align:center;vertical-align:top;" id="d41e56"><strong class="ph b">Default password</strong></th>
+
+                        <th class="entry cellrowborder" style="text-align:center;vertical-align:top;" id="d41e60"><strong class="ph b">Description</strong></th>
+
+                    </tr>
+
+                </thead>
+<tbody class="tbody">
+                    <tr class="row">
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e52 "><span class="ph filepath">admin </span></td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e56 "><span class="ph filepath">admin</span></td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e60 ">
+                            <p class="p">Administrative account for accessing IBM StoredIQ Data Server. Use
+                                this account for the initial setup of the data server and to create
+                                further administrative accounts for routine administration</p>
+
+                            <p class="p">Change the password in IBM StoredIQ Data Server under<span class="ph menucascade"><span class="ph uicontrol">Administration &gt; Configuration &gt; Manage
+                                        users</span></span>. </p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr class="row">
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e52 "><span class="ph filepath">audituser</span></td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e56 "><span class="ph filepath">Passw0rd!</span></td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e60 ">
+                            <p class="p">Account for accessing the audit database on the AppStack.</p>
+
+                            <p class="p"> Change the password by running the
+                                    <span class="ph uicontrol">change_audituser_password</span> script as
+                                siqadmin user on the AppStack.</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr class="row">
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e52 "><span class="ph filepath">builder</span></td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e56 ">None. Password is set during initial configuration</td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e60 ">
+                            <p class="p">Account for setting up and configuring the Elasticsearch cluster.</p>
+
+                            <p class="p">You can change the password by using the Linux <span class="ph uicontrol">passwd
+                                </span>command.</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr class="row">
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e52 "><span class="ph filepath">reportuser</span></td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e56 "><span class="ph filepath">St0red1q</span></td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e60 ">
+                            <p class="p">Account for accessing the report database on the AppStack</p>
+
+                            <p class="p">Change the password by running the
+                                    <span class="ph uicontrol">change_reportuser_password</span> script as
+                                siqadmin user on the AppStack.</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr class="row">
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e52 "><span class="ph filepath">siqadmin</span></td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e56 "><span class="ph filepath">Passw0rd!</span></td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e60 ">
+                            <p class="p">Administrative account for managing the AppStack server. For more
+                                information, see the administration guide.</p>
+
+                            <p class="p">With new installations, you are prompted for a new password during
+                                the initial configuration of the AppStack. In updated deployments,
+                                change the password by using the Linux <span class="ph uicontrol">passwd
+                                </span>command. </p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr class="row">
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e52 "><span class="ph filepath">superadmin</span></td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e56 "><span class="ph filepath">admin </span></td>
+
+                        <td class="entry cellrowborder" style="text-align:center;vertical-align:top;" headers="d41e60 ">
+                            <p class="p">Administrative account for accessing IBM StoredIQ Administrator and
+                                IBM StoredIQ Data Server. Use this account for the initial setup of
+                                IBM StoredIQ and to create further administrative accounts for
+                                routine administration so that their actions can be audited.</p>
+
+                            <p class="p">Change the password in IBM StoredIQ Administrator: go to
+                                    <span class="ph uicontrol">Users</span> and edit the superadmin
+                                account.</p>
+
+                            <p class="p">The superadmin account has access to all IBM StoredIQ applications on
+                                the application stack. To switch applications, click the triangle
+                                arrow icon and select the application that you want to access from
+                                the list of the available applications. </p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+</table>
+</div>
+
+    </div>
+
+</body>
+</html>

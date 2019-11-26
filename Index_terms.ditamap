@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="index_terms.ditamap">
+    <title>Index Terms</title>
+
+    <keydef keys="indexkey" href="Topics/Indexterms.dita"></keydef> 
+</map>

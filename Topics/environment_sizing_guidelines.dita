@@ -2,7 +2,11 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="environment_sizing_guidelines">
     <title>Environment sizing guidelines</title>
-    <shortdesc></shortdesc>
+    <prolog>
+        <metadata>
+            <keywords conkeyref="indexkey/in2"></keywords>
+        </metadata>
+    </prolog>
     <conbody>
         <p>To size an environment precisely, you must understand the factors such as harvest
             frequency, complexity of the source, and use case scenarios that drive application use
@@ -11,11 +15,11 @@
         <ul id="ul_gdj_13l_tjb">
             <li>For data servers of the type DataServer - Classic: <p>– One data server for up to 30
                     TBs of data (which can vary based on the number of volumes, objects per volume,
-                    and object types). </p><p>– Up to 500 volumes per data server</p><p><b>Tip:
-                    </b>When you're sizing an environment that includes Sharepoint data sources,
-                    keep in mind that volumes must be defined at Sharepoint site collection level,
-                    not the Sharepoint server level.</p><p>Up to 150 million objects per data
-                    server.</p></li>
+                    and object types). </p><p>– Up to 500 volumes per data server</p><p><b
+                        props="prop1">Tip: </b>When you're sizing an environment that includes
+                    Sharepoint data sources, keep in mind that volumes must be defined at Sharepoint
+                    site collection level, not the Sharepoint server level.</p><p>Up to 150 million
+                    objects per data server.</p></li>
             <li>One gateway per 50 data servers</li>
             <li>One application server.</li>
             <li>NFS is slightly faster than CIFS for metadata only, but assume CIFS/NFS even for
@@ -77,7 +81,9 @@
                     <li>VMware ESXi v5.0 and fix packs, v6.0 and fix packs, or v6.5 and fix
                         packs.</li>
                     <li>VMware virtual machine hardware version 8.0 or later. For more information,
-                        see the VMware product documentation. </li>
+                        see the <xref href="https://www.vmware.com/support/pubs/" format="html"
+                            scope="external">VMware product documentation.</xref>
+                    </li>
                     <li>The appropriate VMware license to enable the required processor cores and
                         memory for the virtual machine. </li>
                 </ul>

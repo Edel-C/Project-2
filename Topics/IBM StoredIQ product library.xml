@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
-<reference id="reference_jsr_qqw_sjb">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="IBM_StoredIQ_product_library">
     <title>IBM StoredIQ product library </title>
-    <refbody>
-        <example>
-            <p>The following documents are available in the<tm tmtype="reg">IBM</tm>
-                <tm tmtype="reg">StoredIQ</tm> product library.<ul id="ul_jz2_xqw_sjb">
-                    <li>IBM StoredIQ Overview Guide</li>
-                    <li>IBM StoredIQ Deployment and Configuration Guide</li>
-                    <li>IBM StoredIQ Data Server Administration Guide</li>
-                    <li>IBM StoredIQ Administrator Administration Guide</li>
-                    <li>IBM StoredIQ Data Workbench User Guide</li>
-                    <li> IBM StoredIQ Policy Manager User Guide</li>
-                    <li>IBM StoredIQ Insights User Guide</li>
-                    <li>IBM StoredIQ Integration Guide</li>
-                </ul></p>
-        </example>
-    </refbody>
-</reference>
+    <prolog>
+        <metadata audience="novice"/>
+    </prolog>
+    <conbody>
+        <p>The following documents are available in the<tm tmtype="reg">IBM</tm>
+            <tm tmtype="reg">StoredIQ</tm> product library.<ul id="ul_jz2_xqw_sjb">
+                <li>IBM StoredIQ Overview Guide</li>
+                <li>IBM StoredIQ Deployment and Configuration Guide</li>
+                <li>IBM StoredIQ Data Server Administration Guide</li>
+                <li>IBM StoredIQ Administrator Administration Guide</li>
+                <li>IBM StoredIQ Data Workbench User Guide</li>
+                <li> IBM StoredIQ Policy Manager User Guide</li>
+                <li>IBM StoredIQ Insights User Guide</li>
+                <li>IBM StoredIQ Integration Guide</li>
+            </ul></p>
+    </conbody>
+</concept>

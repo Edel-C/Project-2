@@ -8,7 +8,7 @@
         <data name="copyright"> © Copyright IBM Corp. 2001, 2019</data>
         <data name="footer">IBM StoredIQ: Deployment and Configuration Guide</data>
     </topicmeta>
-    <topicref href="Topics/Glossary.dita" keys="" toc="no"></topicref>
+    <mapref href="Common_Resources.ditamap" format="ditamap"/>
     <topicref href="Topics/About_this_publication.dita">
         <topicref href="Topics/IBM%20StoredIQ%20product%20library.xml"/>
         <topicref href="Topics/contacting_ibm_storediq_customer_support.dita"/>
@@ -38,4 +38,26 @@
         <topicref href="Topics/Deploying%20the%20virtual%20appliances.dita"/>
         <topicref href="Topics/deploying_ibm_storediq_on_microsoft_hyper_v.dita"/>
     </topicref>
+    <topicref href="Topics/Glossary.dita" processing-role="resource-only"/>
+    <topichead navtitle="Glossary" >
+        <topichead navtitle="A">
+            <topicref href="Topics/Glossary.dita#applicationstack"></topicref>
+            <topicref href="Topics/Glossary.dita#autoclass"></topicref>
+        </topichead>
+        <topichead navtitle="C">
+            <topicref href="Topics/Glossary.dita#cartridges"></topicref>
+            <topicref href="Topics/Glossary.dita#apisdk"></topicref>
+        </topichead>
+        <topichead navtitle="D">
+            <topicref href="Topics/Glossary.dita#dataservers"></topicref>
+            <topicref href="Topics/Glossary.dita#ds-classic"></topicref>
+            <topicref href="Topics/Glossary.dita#ds-distributed"></topicref>
+        </topichead>
+        <topichead navtitle="G">
+            <topicref href="Topics/Glossary.dita#gateway"></topicref>
+        </topichead>
+        <topichead navtitle="I">
+            <topicref href="Topics/Glossary.dita#IBMinsights"></topicref>
+        </topichead>
+    </topichead>
 </map>

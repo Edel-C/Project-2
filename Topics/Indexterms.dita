@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="indexterms1">
+    <title>Index_Terms</title>
+    <shortdesc></shortdesc>
+    <prolog>
+        <metadata>
+            <keywords id="in1">
+                <keyword></keyword>
+                <indexterm id="ElasticSearch">Elasticsearch cluster<index-see>DataServer Distributed</index-see></indexterm>
+                <indexterm id="deployment">deployment</indexterm>
+                <indexterm id="gloabalassets">global assets<indexterm>IBM StoredIQ applications</indexterm></indexterm>
+                <indexterm id="server">server<index-see>IBM StoredIQ</index-see></indexterm>
+                <indexterm id="Administrator">administrator<index-see>IBM StoredIQ Administrator</index-see></indexterm>
+                <indexterm id="harvest">harvests<indexterm>indexing</indexterm></indexterm>
+                <indexterm id="infosets">infosets</indexterm>
+            </keywords>
+            <keywords id="in2">
+                <indexterm id="workbench">workbench<index-see>data visualization</index-see></indexterm>
+                <indexterm id="filters">filters</indexterm>
+                <indexterm id="Desktopdatacollector">Desktop Data Collector<indexterm>desktop client</indexterm></indexterm>
+                <indexterm id="OVA">Open Virtual Application</indexterm>
+                <indexterm id="vmware">VMWare</indexterm>
+                <indexterm id="node">node</indexterm>
+                </keywords>
+            <keywords id="id3">
+                <indexterm id="communication">Communication<index-see>Network and port requirements</index-see></indexterm>
+                <indexterm id="port">port</indexterm>
+                <indexterm id="iptable">firewall<indexterm>chainrules</indexterm></indexterm>
+                <indexterm id="desktop">desktop client access</indexterm>
+                <indexterm id="environment">Environment sizing guidelines<indexterm>harvest frequency</indexterm></indexterm>
+                <indexterm id="license">License</indexterm>
+                <indexterm id="dist-infrastructure">distributed infrastructure<index-see>IBM StoredIQ</index-see></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p></p>
+    </conbody>
+</concept>

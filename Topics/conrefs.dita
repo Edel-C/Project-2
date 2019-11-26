@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_h5h_zbk_vjb">
+    <title>Conrefs</title>
+    <conbody>
+        <p><ph id="contact"> <xref href="https://www.ibm.com/contact/us/en" format="html" scope="external">https://www.ibm.com/contact/us/en</xref></ph>
+            <ph id="footer">©Copyright IBM Corp. 2001, 2019</ph>
+            <ph id="IBM"><xref href="https://www.ibm.com/support/pages/sites/default/files/inline-files/$FILE/IBMSIQDeploymentConfigGuide76019_1.pdf" format="pdf" scope="external"></xref></ph></p>
+    </conbody>
+ 
+</concept>

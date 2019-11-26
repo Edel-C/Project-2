@@ -2,11 +2,22 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="ibm_stored_data_server">
     <title>IBM Stored Data Server</title>
+    <prolog>
+        <critdates>
+            <created date="2019-11-12"/>
+            <revised modified="2019-11-13"/>
+        </critdates>
+    </prolog>
+ 
     <conbody>
-        <p>IBM StoredIQ Data Server user interface provides access to data server functionality. It
-            allows administrators to view the dashboard and see the status of the jobs and system
-            details. Administrators can manage information about servers and conduct various
-            configurations on the system and application settings. <image
-                href="Images/IBM%20DS%20Admin.PNG" id="image_z55_cww_sjb"/></p>
+        <p product="product1">IBM StoredIQ Data Server user interface provides access to data server
+            functionality. It allows administrators to view the dashboard and see the status of the
+            jobs and system details. Administrators can manage information about servers and conduct
+            various configurations on the system and application settings. </p>
+        <fig id="fig_xxy_tyj_vjb">
+            <image keyref="IBMDSAdmin" id="image_ldl_mnz_vjb" conkeyref="IBMDSAdmin/">
+                <alt>IBMDSAdmin</alt>
+            </image>
+        </fig>
     </conbody>
 </concept>

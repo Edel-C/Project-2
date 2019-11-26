@@ -2,6 +2,11 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="license_usage_metrics">
     <title>License usage metrics</title>
+    <prolog>
+        <metadata>
+            <keywords conkeyref="indexkey/id3"></keywords>
+        </metadata>
+    </prolog>
     <conbody>
         <p>Using the IBM License Metric Tool, you can generate license consumption reports that
             count IBM StoredIQ license usage. </p>
@@ -44,8 +49,9 @@
                 Conversion Table specified in the license information (li_languagecode file) that
                 comes with IBM StoredIQ. On the application stack, you can find the license
                 information in the License directory.</p>
-            <p>For more information about using IBM License Metric Tool, see the IBM License Metric
-                Tool documentation.</p>
+            <p>For more information about using IBM License Metric Tool, see the <xref
+                    href="https://www.ibm.com/support/knowledgecenter/SS8JFY_9.2.0/com.ibm.lmt.doc/welcome/LMT_welcome.html"
+                    format="html" scope="external">IBM License Metric Tool documentation.</xref></p>
         </section>
     </conbody>
 </concept>

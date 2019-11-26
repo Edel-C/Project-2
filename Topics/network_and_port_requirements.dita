@@ -2,7 +2,12 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="network_and_port_requirements">
     <title>Network and port requirements</title>
-    <shortdesc></shortdesc>
+    <prolog>
+        <metadata>
+            <keywords conkeyref="indexkey/in2"></keywords>
+            <keywords conkeyref="indexkey/id3"></keywords>
+        </metadata>
+    </prolog>
     <conbody>
         <p>For proper communication, the IBM StoredIQ components must be able to connect to each
             other. </p>
@@ -35,9 +40,10 @@
             (SSH) communication and allows remote administration access to the VM. In general,
             traffic is encrypted using password authentication. To add a layer of security, you can
             establish key-based authentication for passwordless SSH logins to any of the IBM
-            StoredIQ nodes in your environment as described in "Configuring SSH key-based
-            authentication" on page 45.<table frame="all" rowsep="1" colsep="1"
-                id="table_yqn_wcl_tjb">
+            StoredIQ nodes in your environment as described in <xref format="pdf" scope="external"
+                href="https://www.ibm.com/support/pages/sites/default/files/inline-files/$FILE/IBMSIQDeploymentConfigGuide76019_1.pdf"
+                >"Configuring SSH key-based authentication" </xref> on page 45.<table frame="all"
+                rowsep="1" colsep="1" id="table_yqn_wcl_tjb">
                 <title>Default open ports on the AppStack</title>
                 <tgroup cols="2" align="center">
                     <colspec colname="c1" colnum="1" colwidth="1*"/>
@@ -105,7 +111,7 @@
                 </tbody>
             </tgroup>
         </table>
-        <section id="section_jz4_qdl_tjb">
+        <section id="section_jz4_qdl_tjb" product="product1">
             <title>Enable or disable ports os services on the IBM StoredIQ data server</title>
             <p>To manage ports, you can use the
                     <filepath>/usr/local/storediq/bin/util/port_handler.pyc </filepath>script with
@@ -284,8 +290,8 @@
                     <li>Run the following
                         command:<codeblock>python /usr/local/storediq/bin/util/port_handler.pyc -e desktop
 </codeblock></li>
-                </ol><b>Tip:</b> These steps are required only on an IBM StoredIQ OVA deployed
-                system. The correct ports are open on an upgraded system.</p>
+                </ol><b otherprops="prop1">Tip:</b> These steps are required only on an IBM StoredIQ
+                OVA deployed system. The correct ports are open on an upgraded system.</p>
         </section>
     </conbody>
 </concept>

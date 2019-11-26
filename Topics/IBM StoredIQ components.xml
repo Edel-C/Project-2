@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="concept_bhz_b5w_sjb">
+<concept id="IBM_StoredIQ_components">
     <title>IBM StoredIQ components</title>
+    <prolog>
+        <metadata audience="novice">
+            <audience audience="expert"/>
+            <keywords conkeyref="indexkey/in1"/>
+        </metadata>
+    </prolog>
     <conbody>
         <p>The IBM StoredIQ solution consists of these components: the application stack, the
             gateway, the data server, and optionally the Elasticsearch cluster. </p>

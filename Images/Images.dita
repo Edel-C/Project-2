@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_tgj_q2z_vjb">
+    <title>Images</title>
+    <conbody>
+        <image id="DSadmin" href="../Images/IBM_DS_Admin.PNG" width="500px"></image>
+        <image href="../Images/Stored_IQ_Administrator.PNG" width="500px" id="Admin"></image>
+        <image href="../Images/Stored_IQ_Data_Workbench.PNG" width="500px" id="workbench"/>
+        <image href="../Images/Stored_IQ_Insights.PNG" width="500px" id="insights"/>
+        <image href="../Images/Stored_IQ_Policy_Manager.PNG" width="500px"/>
+    </conbody>
+</concept>
